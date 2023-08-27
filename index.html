@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Alex's Portfollio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+          <div class="leftSection">
+            Hi <br> my name is <span class="purple">Alex Nitin</span> <br>
+            I am a Enthusaistic <br>
+            <span id="element"></span>
+          </div>
+          <div class="rightSection">
+            <img src="bg.webp" alt="">
+         </div>
+        </section>
+
+
+        <section class="secondSection">
+          <hr>
+          <h1 class="pastEx">past experience</h1>
+        </section>
+    </main>
+      
+ 
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer .', '&amp; a Marketing Management analyst.'],
+      typeSpeed: 60,
+    });
+  </script>
+</body>
+</body>
+</html>
