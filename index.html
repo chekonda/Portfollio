@@ -13,8 +13,8 @@
             <div class="left">Alex's Portfollio</div>
             <div class="right"></div>
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Home</a></li>
+              <li><a href="#about">About</a></li> 
+              <li><a href="">Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Contact</a></li>
@@ -28,30 +28,157 @@
             I am a Enthusaistic <br>
             <span id="element"></span>
           </div>
-          <div class="rightSection">
+          <div class="rightSection" >
             <img src="bg.webp" alt="">
          </div>
         </section>
 
 
-        <section class="secondSection">
+        <section id="aboutme" class="secondSection" >
           <hr>
-          <h1 class="pastEx">past experience</h1>
+          <section  id="about" class="about">
+            <div     class="bio-container">
+                <h2 class="head-text aboutme">
+                    ABOUT ME<span class="underline underline-primary aboutme"></span>
+                </h2>
+                <div class="about-content">
+                    <p class="aboutme">
+                        Hi there! I'm a passionate web developer based in [Your City/Country], with a love for turning ideas into functional and beautiful websites.
+                    </p>
+                    <p  class="aboutme">
+                        I specialize in front-end development, crafting user interfaces that are not only visually appealing but also user-friendly and responsive across devices.
+                    </p>
+                    <p class="aboutme">
+                        When I'm not coding, you'll often find me exploring the latest web technologies, experimenting with new design trends, and constantly seeking ways to enhance my skills.
+                    </p>
+                    <p class="aboutme">
+                        I'm a firm believer in open-source collaboration, and I actively contribute to projects that make the web a better place. Some of my contributions include [mention a few projects or communities].
+                    </p>
+                    <p class="aboutme">
+                        In my free time, I enjoy sharing my knowledge through technical writing and tutorials. You can find some of my articles on [your blog or platform].
+                    </p>
+                    <p class="aboutme">
+                        Here are some of the technologies I'm proficient in:
+                    </p>
+                    <ul class="language aboutme">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>SASS</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <p class="aboutme">
+                        I'm always eager to collaborate on exciting web projects, so if you have an idea or need a web developer for your next project, feel free to get in touch!
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        
         </section>
     </main>
       
  
 
-  <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+ <!-- Load library from the CDN -->
+<!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-  <!-- Setup and start animation! -->
-  <script>
+
+<script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer .', '&amp; a Marketing Management analyst.'],
-      typeSpeed: 60,
+        strings: ['Web Developer', 'Marketing Management analyst'],
+        typeSpeed: 90,
+        loop: true, 
     });
-  </script>
+    function scrollToAbout() {
+   
+    window.location.hash = '#about';
+
+    window.location.reload();
+}
+</script> -->
+
+<!-- 
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Marketing Management analyst'],
+        typeSpeed: 90,
+        loop: true, 
+    });
+
+  
+    document.addEventListener('DOMContentLoaded', function() {
+    
+        var aboutLink = document.querySelector('a[href="#about"]');
+        
+     
+        if (aboutLink) {
+            aboutLink.addEventListener('click', scrollToAbout);
+        }
+    });
+
+    function scrollToAbout(event) {
+              event.preventDefault(); 
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        window.location.reload();
+    }
+</script> -->
+<script>
+         var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Marketing Management analyst'],
+        typeSpeed: 90,
+        loop: true, 
+    });
+    function scrollToAbout() {
+   
+    window.location.hash = '#about';
+
+    window.location.reload();
+}
+</script> 
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+  
+</script>
+
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Marketing Management analyst'],
+        typeSpeed: 90,
+        loop: true, // Enable looping
+    });
+
+
+
+
+  // Ensure the DOM is ready before attaching click event handlers
+  document.addEventListener('DOMContentLoaded', function () {
+      // Get a reference to the "About" link
+      var aboutLink = document.querySelector('a[href="#about"]');
+
+      // Attach a click event handler
+      if (aboutLink) {
+          aboutLink.addEventListener('click', scrollToAbout);
+      }
+  });
+
+  function scrollToAbout(event) {
+      event.preventDefault(); // Prevent default link behavior
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
+</script>
+
+
 </body>
 </body>
 </html>
