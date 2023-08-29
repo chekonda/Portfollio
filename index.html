@@ -13,12 +13,13 @@
             <div class="left">Alex's Portfollio</div>
             <div class="right"></div>
             <ul>
-              <li><a href="#about">About</a></li> 
               <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+              <li><a href="#about">About</a></li> 
+              
+              
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+              </ul>
         </nav>
     </header>
     <main>
@@ -38,12 +39,12 @@
           <hr>
           <section  id="about" class="about">
             <div     class="bio-container">
-                <h2 class="head-text aboutme">
+                <div style="background-color: #083a3c; "><h2   style="color:white;" class="head-text aboutme">
                     ABOUT ME<span class="underline underline-primary aboutme"></span>
-                </h2>
+                </h2></div> 
                 <div class="about-content">
                     <p class="aboutme">
-                        Hi there! I'm a passionate web developer based in [Your City/Country], with a love for turning ideas into functional and beautiful websites.
+                        Hi there! I'm a passionate web developer from Hyderabad,Telengana, with a love for turning ideas into functional and beautiful websites.
                     </p>
                     <p  class="aboutme">
                         I specialize in front-end development, crafting user interfaces that are not only visually appealing but also user-friendly and responsive across devices.
@@ -52,10 +53,10 @@
                         When I'm not coding, you'll often find me exploring the latest web technologies, experimenting with new design trends, and constantly seeking ways to enhance my skills.
                     </p>
                     <p class="aboutme">
-                        I'm a firm believer in open-source collaboration, and I actively contribute to projects that make the web a better place. Some of my contributions include [mention a few projects or communities].
+                        I'm a firm believer in open-source collaboration, and I actively contribute to projects that make the web a better place. Some of my contributions include Snake and ladder game,Placement Portal and a lot more.
                     </p>
                     <p class="aboutme">
-                        In my free time, I enjoy sharing my knowledge through technical writing and tutorials. You can find some of my articles on [your blog or platform].
+                        In my free time, I enjoy sharing my knowledge through technical writing and tutorials. You can find some of my articles on git.
                     </p>
                     <p class="aboutme">
                         Here are some of the technologies I'm proficient in:
@@ -77,6 +78,74 @@
         
         
         </section>
+        <section id="projects" class="thirdSection">
+          <hr>
+          <h2  class="head-text project-heading">
+              Projects<span class="underline underline-primary aboutme"></span>
+          </h2>
+          <div class="project-container">
+              <div class="project">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                  <p class="project-description">Project 1: Description goes here.</p>
+                  <a href="project_link_1" target="_blank">View Project</a>
+              </div>
+              <div class="project">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                  <p class="project-description">Project 2: Description goes here.</p>
+                  <a href="project_link_2" target="_blank">View Project</a>
+              </div>
+              <div class="project">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                <p class="project-description">Project 2: Description goes here.</p>
+                <a href="project_link_2" target="_blank">View Project</a>
+            </div> <div class="project">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+              <p class="project-description">Project 2: Description goes here.</p>
+              <a href="project_link_2" target="_blank">View Project</a>
+          </div>
+              <!-- Add more projects as needed -->
+          </div>
+      </section>
+      <section id="contact" class="fourthSection">
+        <hr>
+        <h2 class="head-text project-heading">
+            Contact<span class="underline underline-primary aboutme"></span>
+        </h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <a href="https://github.com/chekonda" target="_blank">
+                    <img class="contact-icon" src="git.jpg" alt="GitHub">
+                </a>
+                <div class="contact-info">GitHub</div>
+            </div>
+            <div class="contact-item">
+                <a href="kedin.com/in/chekonda-alex-nitin-ba224b1b7/" target="_blank">
+                    <img class="contact-icon" src="linkdin.jpg" alt="LinkedIn">
+                </a>
+                <div class="contact-info">LinkedIn</div>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.instagram.com/alex_nitin" target="_blank">
+                    <img class="contact-icon" src="insta.jpg" alt="Instagram">
+                </a>
+                <div class="contact-info">Instagram</div>
+            </div>
+            <div class="contact-item">
+                <a href="https://mysignins.microsoft.com/security-info?tenant=e14e73eb-5251-4388-8d67-8f9f2e2d5a46&upn=chekonda.12003121%40lpu.in" target="_blank">
+                    <img class="contact-icon" src="outlook.jpg" alt="LeetCode">
+                </a>
+                <div class="contact-info">Outlook</div>
+            </div>
+            <div class="contact-item">
+                <a href="www.gmail.com" target="_blank">
+                    <img class="contact-icon" src="gmail.jpg" alt="Visual Studio Code">
+                </a>
+                <div class="contact-info">Gmail id:chekondaalexnitin@gmail.com</div>
+            </div>
+        </div>
+    </section>
+    
+      
     </main>
       
  
@@ -144,7 +213,7 @@
 }
 </script> 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
-  
+
 </script>
 
 <!-- Setup and start animation! -->
@@ -176,6 +245,22 @@
           aboutSection.scrollIntoView({ behavior: 'smooth' });
       }
   }
+
+  document.addEventListener('DOMContentLoaded', function () {
+        var contactLink = document.querySelector('#contact-link');
+        
+        if (contactLink) {
+            contactLink.addEventListener('click', scrollToContact);
+        }
+    });
+
+    function scrollToContact(event) {
+        event.preventDefault(); // Prevent default link behavior
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 </script>
 
 
