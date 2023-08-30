@@ -268,7 +268,7 @@ main hr{
     box-shadow:inset -3px 4px 6px 18px rgba(0, 0, 0, 0.1);
     color:#083a3c;
     font-family: Arial, sans-serif;
-    margin-top: 30%; /* Adjust the margin-top as needed */
+    margin-top: 30%; /
 }
 
 .project-container {
@@ -285,21 +285,21 @@ main hr{
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: box-shadow 0.3s; /* Add transition for box-shadow */
+    transition: box-shadow 0.3s; 
 }
 
 .project:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Apply shadow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .project iframe {
     width: 100%;
     height: 200px;
-    transition: transform 0.3s; /* Add transition for video scaling */
+    transition: transform 0.3s; 
 }
 
 .project:hover iframe {
-    transform: scale(1.05); /* Scale up the video on hover */
+    transform: scale(1.05); 
 }
 
 .project-description {
@@ -320,7 +320,7 @@ main hr{
     background-color: #095f5f;
 }
 
-/* Style for the "Projects" heading */
+
 .project-heading {
     font-size: 2rem;
     text-align: center;
@@ -328,15 +328,15 @@ main hr{
     color: #083a3c; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
-    border-bottom: 2px solid #083a3c; /* Add an underline */
-    padding-bottom: 0.5rem; /* Adjust the spacing between text and underline */
+    border-bottom: 2px solid #083a3c; 
+    padding-bottom: 0.5rem; 
     transition: color 0.3s, border-color 0.3s; 
 }
 
-/* Change the heading color on hover */
+
 .project-heading:hover {
-    color: #095f5f; /* New color on hover */
-    border-color: #095f5f; /* New border color on hover */
+    color: #095f5f; 
+    border-color: #095f5f; 
 }
 
 @keyframes fadeIn {
